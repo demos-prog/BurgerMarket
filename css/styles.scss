@@ -1,0 +1,122 @@
+.wrapper {
+  font-family: Montserrat Alternates;
+  max-width: 1920px;
+  width: 100%;
+  background-color: #030F1B;
+  color: #ECFAFD;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1740px;
+  width: 100%;
+}
+
+.headCont {
+  height: 125px;
+  display: flex;
+  align-items: center;
+  // .headCont__Logo
+
+  &__Logo {
+    margin-right: auto;
+    border: 1px solid #F6C544;
+    border-radius: 3px;
+    color: #F6C544;
+    background: #323232;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    // .headCont__Logo_img
+    &_img {
+      padding: 0 7px;
+    }
+
+    // .headCont__Logo_text
+    &_text {
+      padding: 0 5px;
+      font-weight: 500;
+      white-space: nowrap;
+      font-size: medium;
+      line-height: 25px;
+      letter-spacing: 2px;
+      font-size: 21px;
+    }
+  }
+
+  // .headCont__menu
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    max-width: 730px;
+    width: 100%;
+
+    // .headCont__menu_item
+    &_item {
+      color: #ECFAFD;
+      font-size: 28px;
+      font-style: normal;
+      line-height: 34px;
+      letter-spacing: 0.05em;
+
+      &:hover {
+        color: #F6C544;
+      }
+    }
+  }
+
+  // .headCont__korzina
+  &__korzina {}
+
+  .wrap {
+    margin-left: auto;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 23px;
+      left: 21px;
+      width: 20px;
+      height: 20px;
+      background-color: #F6C544;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "1";
+      position: absolute;
+      top: 24px;
+      left: 28px;
+      color: white;
+    }
+  }
+
+  // .headCont__phone
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    // .headCont__phone_img
+    &_img {
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    // .headCont__phone_text
+    &_text {
+      white-space: nowrap;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.05em;
+      padding: 0 5px;
+      border-bottom: 1px solid #38D3F4;
+    }
+  }
+}
