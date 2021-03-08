@@ -58,3 +58,18 @@ var $tabs = function (target) {
 
 $tabs('.tabs');
 // ТАБЫ - Конец
+
+// Изменение количества блюд - начало
+let plus = document.querySelector('.front__counter_plus');
+let count = document.querySelector('.front__counter_count');
+let minus = document.querySelector('.front__counter_minus');
+
+plus.addEventListener('click', ()=>{
+  count.innerHTML = +count.innerHTML + 1;
+})
+minus.addEventListener('click', ()=>{
+  if(+count.innerHTML > 0){
+    count.innerHTML = +count.innerHTML - 1;
+  }
+})
+// Изменение количества блюд - конец

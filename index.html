@@ -70,26 +70,55 @@
         </div>
 
         <section class="sect1">
-
+          <h1 class="sect1__title">Наше меню</h1>
           <div class="tabs">
             <div class="tabs__nav">
-              <a class="tabs__link tabs__link_active" href="#content-1">Вкладка 1</a>
-              <a class="tabs__link" href="#content-2">Вкладка 2</a>
-              <a class="tabs__link" href="#content-3">Вкладка 3</a>
+              <a class="tabs__link tabs__link_active" href="#content-1">Бургеры</a>
+              <a class="tabs__link" href="#content-2">Салаты</a>
+              <a class="tabs__link" href="#content-3">Напитки</a>
+              <a class="tabs__link" href="#content-4">Сэты</a>
             </div>
             <div class="tabs__content">
               <div class="tabs__pane tabs__pane_show" id="content-1">
-                Содержимое 1...
+
+                <div class="sect1__menuLine">
+                  <div class="sect1__menuLine_item">
+
+                    <div class="back">
+                      <img class="back__img" src="img/burger1.png">
+                      <h2 class="back__title">Бургер Класический 400 г.</h2>
+                      <p class="back__text">булочка, фарш мясной, сыр твёрдый,
+                        помидоры, огурцы солёные, лук фиолетовый, салат листовой, майонез,
+                        кетчуп, перец чёрный, соль, масло подсолнечное
+                      </p>
+                      <div class="back__price">15 000 $</div>
+                    </div>
+
+                    <div class="front">
+                      <div class="front__text">Заказать</div>
+                      <div class="front__counter">
+                        <div class="front__counter_minus">-</div>
+                        <div class="front__counter_count">1</div>
+                        <div class="front__counter_plus">+</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
               <div class="tabs__pane" id="content-2">
-                Содержимое 2...
+                Салаты
               </div>
               <div class="tabs__pane" id="content-3">
-                Содержимое 3...
+                Напитки
+              </div>
+              <div class="tabs__pane" id="content-4">
+                Сэты
               </div>
             </div>
           </div>
-        
+
         </section>
       </div>
     </main>
