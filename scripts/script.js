@@ -60,16 +60,32 @@ $tabs('.tabs');
 // ТАБЫ - Конец
 
 // Изменение количества блюд - начало
-let plus = document.querySelector('.front__counter_plus');
-let count = document.querySelector('.front__counter_count');
-let minus = document.querySelector('.front__counter_minus');
+let plus = document.querySelectorAll('.front__counter_plus');
+let minus = document.querySelectorAll('.front__counter_minus');
 
-plus.addEventListener('click', ()=>{
-  count.innerHTML = +count.innerHTML + 1;
-})
-minus.addEventListener('click', ()=>{
-  if(+count.innerHTML > 0){
-    count.innerHTML = +count.innerHTML - 1;
-  }
-})
+for (const item of plus) {
+  item.addEventListener('click', ()=>{
+    let count = item.previousElementSibling;
+    count.innerHTML = +count.innerHTML + 1;
+  })
+}
+
+for (const item of minus) {
+  let count = item.nextElementSibling;
+  item.addEventListener('click', ()=>{
+    if(+count.innerHTML > 0){
+      count.innerHTML = +count.innerHTML - 1;
+    }
+  })
+}
 // Изменение количества блюд - конец
+
+// Кнопка *Показать больше* - начало
+let btn = document.querySelector('.showMoreBtn');
+
+btn.addEventListener('click', ()=>{
+  let elems = document.querySelectorAll('.sect1__menuLine');
+  let lastElem = elems[elems.length - 1];
+  lastElem.classList.remove("hiden");
+})
+// Кнопка *Показать больше* - конец 
