@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper {
   font-family: Montserrat Alternates;
   max-width: 1920px;
@@ -618,5 +619,86 @@
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0.05em;
+}
+
+.sect4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sect4Cont__firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sect4Cont__firstLine_text1 {
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.05em;
+  width: 590px;
+  padding-right: 150px;
+}
+
+.sect4Cont__firstLine_text2 {
+  font-family: Rubik;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 62px;
+  letter-spacing: 0.1em;
+}
+
+.sect4Cont__secondLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sect4Cont__secondLine_text {
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+}
+
+.sect4Cont__secondLine_btn {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 15px 30px;
+  background-color: #F6C544;
+  border-radius: 10px;
+  white-space: nowrap;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.newIcon {
+  position: relative;
+}
+
+.newIcon::after {
+  content: "Новинка";
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  color: #fff;
+  width: 70px;
+  height: 15px;
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.1em;
 }
 /*# sourceMappingURL=styles.css.map */
