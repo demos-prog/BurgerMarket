@@ -90,7 +90,7 @@ btn.addEventListener('click', ()=>{
 })
 // Кнопка *Показать больше* - конец 
 
-// время работы - начало
+// добавления время работы - начало
 let adreses = document.querySelectorAll('.item__adres');
 
 for (const item of adreses) {
@@ -102,4 +102,4 @@ for (const item of adreses) {
     time.classList.add('hiden');
   })
 }
-// время работы - конец
+// добавление время работы - конец

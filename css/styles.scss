@@ -455,6 +455,7 @@
 
 .sect2 {
   margin-bottom: 60px;
+
   // .sect2_title
   &_title {
     font-size: 48px;
@@ -558,3 +559,78 @@
     letter-spacing: 0.05em;
   }
 }
+
+.sect3 {
+
+  // .sect3__title
+  &__title {
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+  }
+}
+
+.sect3Cont {}
+
+.sect3Cont-firstLine {
+  display: flex;
+  // justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.first{
+  margin-right: 20%;
+}
+
+.sect3Cont-secondLine {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.sec{
+  margin-left: 20%;
+}
+
+.foth{
+  margin-left: 20%;
+}
+
+.advantage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+
+  // .advantage__number
+  &__number {
+    font-family: Rubik;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    padding: 11px 21px;
+    color: #fff;
+    background-color: #F6C544;
+    border-radius: 50%;
+  }
+
+  // .advantage__title
+  &__title {
+    color: #F6C544;
+  }
+
+  // .advantage__text
+  &__text {}
+}
+
+.advWrap {
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
