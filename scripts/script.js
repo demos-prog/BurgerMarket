@@ -89,3 +89,17 @@ btn.addEventListener('click', ()=>{
   lastElem.classList.remove("hiden");
 })
 // Кнопка *Показать больше* - конец 
+
+// время работы - начало
+let adreses = document.querySelectorAll('.item__adres');
+
+for (const item of adreses) {
+  let time = item.nextElementSibling;
+  item.addEventListener('mouseover', ()=>{
+    time.classList.remove('hiden');
+  })
+  item.addEventListener('mouseout', ()=>{
+    time.classList.add('hiden');
+  })
+}
+// время работы - конец
