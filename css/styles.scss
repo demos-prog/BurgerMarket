@@ -634,3 +634,23 @@
   letter-spacing: 0.05em;
 }
 
+.sect4 {
+}
+.sect4Cont {
+		// .sect4Cont__firstLine
+		&__firstLine {
+			// .sect4Cont__firstLine_text1
+			&_text1 {}
+			// .sect4Cont__firstLine_text2
+			&_text2 {}
+		}
+		// .sect4Cont__secondLine
+		&__secondLine {
+			// .sect4Cont__secondLine_text
+			&_text {}
+			// .sect4Cont__secondLine_btn
+			&_btn {}
+		}
+}
+.sect4Img {
+}
