@@ -15,12 +15,24 @@
   width: 100%;
 }
 
+main{
+  transform: translate(0, 120px);
+}
+
+header{
+  z-index: 100;
+  background: #030F1B;
+  position: fixed;
+  border-bottom: 1px solid #F6C544;
+  width: 100%;
+}
+
 .headCont {
   height: 125px;
   display: flex;
   align-items: center;
+  
   // .headCont__Logo
-
   &__Logo {
     margin-right: auto;
     border: 1px solid #F6C544;
@@ -635,6 +647,11 @@
 }
 
 .sect4 {
+  background-color: #ff0000c4;
+  padding: 20px 0;
+}
+
+.sect4Wrapper {
   display: flex;
   align-items: center;
 }
@@ -653,10 +670,24 @@
       letter-spacing: 0.05em;
       width: 590px;
       padding-right: 150px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 20px;
+        background-image: url(../img/Arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 400px;
+      }
     }
 
     // .sect4Cont__firstLine_text2
     &_text2 {
+      display: flex;
+      align-items: center;
       font-family: Rubik;
       font-size: 48px;
       font-weight: 900;
@@ -686,9 +717,10 @@
       line-height: 31px;
       letter-spacing: 0.1em;
       color: #fff;
+      margin: auto 100px auto 15px;
       padding: 15px 30px;
       background-color: #F6C544;
-      border-radius: 10px;
+      border-radius: 20px;
       white-space: nowrap;
       height: min-content;
     }
@@ -715,4 +747,76 @@
     line-height: 26px;
     letter-spacing: 0.1em;
   }
+}
+
+.footer{
+  background: #4a3d2bb4;
+}
+
+.footerCont {
+  display: flex;
+  align-items: center;
+  height: min-content;
+  padding:75px 0;
+  justify-content: space-between;
+
+  // .footerCont__adreses
+  &__adreses {
+
+    // .footerCont__adreses_title
+    &_title {
+      margin-bottom: 20px;
+      font-family: Rubik;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+    }
+
+    // .footerCont__adreses_adres
+    &_adres {
+      margin-bottom: 20px;
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  // .footerCont__phones
+  &__phones {
+
+    // .footerCont__phones_title
+    &_title {
+      margin-bottom: 20px;
+      font-family: Rubik;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+    }
+
+    // .footerCont__phones_phone
+    &_phone {
+      margin-bottom: 20px;
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  // .footerCont__social
+  &__social {
+
+    // .footerCont__social_title
+    &_title {
+      margin-bottom: 60px;
+    }
+  }
+}
+.mout{
+  margin-right: unset;
 }
